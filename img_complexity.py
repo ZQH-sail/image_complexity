@@ -102,7 +102,10 @@ with open('results.csv', 'w', newline='') as csvfile:
     bw = img[:,:,0] > 230
     regions = regionprops(bw.astype(int))
     filePerimeter = regions[0].perimeter
-
+    
+    ##Hello, sorry to contact you in this way.I can't understand the meaning of this calculation, can you give me a paper about 'E'? 
+    ##My email address: 1129981228@qq.com 
+    ##Looking forward to your reply, thanks.
     E = shannonResult + saliencyMap + saliencyThresh + fileColorfullness + filePerimeter
 
     print("{}, size(raw): {}, shannon: {}, size(canny): {}, saliency map: {}, saliency threshold: {}, colorfullness: {}, perimeter: {}, E: {}".format(fileName, fileSize, shannonResult, cannonResult, saliencyMap, saliencyThresh, fileColorfullness, filePerimeter, E))
